@@ -8,53 +8,36 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .main-wrapper {
   height: 100%;
   width: 100%;
+  gap: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: salmon;
-}
-
-.card {
-  height: 400px;
-  width: 300px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 23px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.6rem;
 }
-.card img {
-  width: 100%;
-  height: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-  border-radius: 10px;
+.main-wrapper .box {
+  height: 350px;
+  width: 300px;
+  background-color: green;
+  border-radius: 17px;
+  border: 1px solid white;
 }
-.card p {
-  color: crimson;
-  font-weight: 900;
-  font-size: 1.32rem;
-}
-.card button {
+.main-wrapper button {
+  padding: 10px 20px;
   border: none;
-  background-color: darkcyan;
-  cursor: pointer;
-  border-radius: 20px;
-  padding: 0.75rem 1rem;
+  border-radius: 7px;
+  background-color: crimson;
   color: white;
-  font-weight: 600;
+  cursor: pointer;
 }
-.card button i {
-  color: yellow;
+.main-wrapper button:hover {
+  background-color: red;
+}
+.main-wrapper button:active {
+  scale: 0.95;
+  background-color: crimson;
 }/*# sourceMappingURL=index.css.map */

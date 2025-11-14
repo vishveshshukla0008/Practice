@@ -1,27 +1,12 @@
-let addFdBtn = document.querySelector("button");
-let p = document.querySelector("p");
-let i = document.createElement("i");
+let box = document.querySelector(".box");
+let btn = document.querySelector("button");
 
-let flag = 0;
+btn.addEventListener("click", function () {
+    let c1 = Math.floor(Math.random() * 256);
+    let c2 = Math.floor(Math.random() * 256);
+    let c3 = Math.floor(Math.random() * 256);
 
-
-addFdBtn.addEventListener("click", function () {
-    if (flag == 0) {
-        p.textContent = "Friends";
-        p.style.color = "green";
-        i.className = '';
-        i.classList.add("ri-close-circle-fill");
-        i.style.color = "Red";
-        addFdBtn.innerHTML = "Remove";
-        addFdBtn.appendChild(i);
-        flag = 1;
-    } else {
-        p.textContent = "Stranger";
-        p.style.color = "red";
-        i.classList.add("ri-user-add-line");
-        i.style.color = "yellow";
-        addFdBtn.innerHTML = "Add Friend";
-        addFdBtn.appendChild(i);
-        flag = 0;
-    }
+    let color = `rgb(${c1},${c2}, ${c3})`;
+    box.style.backgroundColor = color;
+    console.log(color)
 })
