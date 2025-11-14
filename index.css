@@ -13,31 +13,45 @@ body {
 .main-wrapper {
   height: 100%;
   width: 100%;
-  gap: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap: 1rem;
 }
 .main-wrapper .box {
-  height: 350px;
-  width: 300px;
-  background-color: green;
-  border-radius: 17px;
-  border: 1px solid white;
+  height: 50%;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  background-color: red;
+}
+.main-wrapper .box .full-name {
+  font-size: 1.88rem;
+  font-weight: 600;
+}
+.main-wrapper .box .captain {
+  font-style: italic;
+  font-weight: 600;
+}
+.main-wrapper .box .t-count {
+  font-weight: 555;
+  font-size: 1.1rem;
 }
 .main-wrapper button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 7px;
   background-color: crimson;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
   color: white;
+  font-weight: 600;
   cursor: pointer;
-}
-.main-wrapper button:hover {
-  background-color: red;
 }
 .main-wrapper button:active {
   scale: 0.95;
-  background-color: crimson;
+  background-color: rgba(220, 20, 60, 0.616);
 }/*# sourceMappingURL=index.css.map */
