@@ -5,23 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="main-wrapper">
-    <input type="text" placeholder="Name">
-    <input type="number" placeholder="Age">
-    <button>Add!!</button>
-    <table>
-      <thead>
-        <th>Name</th>
-        <th>Age</th>
-      </thead>
-      <tbody>
+    <div class="form-wrapper">
+      <p class="top">Login System</p>
+      <form>
+        <div>
+          <input type="email" placeholder="Email :" name="email">
+          <p class="error email-error hide">Error</p>
+        </div>
+        <div>
+          <input type="password" placeholder="Password :" name="password">
+          <p class="error password-error hide">Error</p>
 
-      </tbody>
-    </table>
+        </div>
+        <div>
+          <input type="number" placeholder="Phone :" name="phone">
+          <p class="error phone-error hide">Error</p>
+
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
