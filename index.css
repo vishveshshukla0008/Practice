@@ -19,39 +19,37 @@ body {
   align-items: center;
   gap: 1rem;
 }
-.main-wrapper .box {
-  height: 50%;
-  width: 40%;
+.main-wrapper input {
+  background-color: beige;
+  padding: 10px 15px;
+  border: none;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.1rem;
-  background-color: red;
-}
-.main-wrapper .box .full-name {
-  font-size: 1.88rem;
-  font-weight: 600;
-}
-.main-wrapper .box .captain {
-  font-style: italic;
-  font-weight: 600;
-}
-.main-wrapper .box .t-count {
-  font-weight: 555;
-  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid grey;
 }
 .main-wrapper button {
-  background-color: crimson;
   border: none;
-  padding: 10px 18px;
-  border-radius: 10px;
-  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: crimson;
   font-weight: 600;
+  color: white;
   cursor: pointer;
+}
+.main-wrapper button:hover {
+  background-color: red;
 }
 .main-wrapper button:active {
   scale: 0.95;
-  background-color: rgba(220, 20, 60, 0.616);
+}
+.main-wrapper table {
+  border: 1px solid red;
+  text-align: center;
+}
+.main-wrapper table thead th {
+  width: 100px;
+  border: 1px solid green;
+}
+.main-wrapper table tbody tr td {
+  border: 1px solid red;
 }/*# sourceMappingURL=index.css.map */
