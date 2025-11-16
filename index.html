@@ -4,38 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
+  <title>Theme Switcher</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-theme="light">
   <div class="main-wrapper">
-    <div class="form-wrapper">
-      <p class="top">Login System</p>
-      <form method="post">
-        <div>
-          <input type="email" placeholder="Email :" name="email">
-          <p class="error email-error hide">Error</p>
-        </div>
-        <div>
-          <input type="password" placeholder="Password :" name="password">
-          <p class="error password-error hide">Error</p>
-
-        </div>
-        <div>
-          <input type="number" placeholder="Phone :" name="phone">
-          <p class="error phone-error hide">Error</p>
-
-        </div>
-        <div>
-          <button disabled type="submit">Login</button>
-        </div>
-      </form>
-    </div>
+    <nav>
+      <p>Toggler</p>
+      <ul>
+        <li>Home</li>
+        <li>Address</li>
+        <li>About us</li>
+        <li>Contact Us</li>
+        <li>Courses</li>
+        <li>Sales</li>
+      </ul>
+    </nav>
+    <main>
+      <button id="toggler">Toggle Theme</button>
+    </main>
   </div>
   <script src="script.js"></script>
 </body>
