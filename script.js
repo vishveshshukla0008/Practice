@@ -1,18 +1,14 @@
-let toggleBtn = document.querySelector("#toggler");
-let data = localStorage.getItem("theme");
+let thumbnail = document.querySelector(".thumbnail");
+let modal = document.querySelector(".modal-outer");
+let i = document.querySelector(".modal i");
 
-if (data == null) data = 'light';
+thumbnail.addEventListener("click", function () {
+    console.log("chala")
+    modal.style.opacity = 1;
+    modal.style.zIndex = 2;
+})
 
-toggleBtn.addEventListener("click", toggleTheme);
-document.body.setAttribute("data-theme", data)
-function toggleTheme() {
-    if (data == 'light') {
-        localStorage.setItem('theme', 'dark');
-        data = 'dark';
-        document.body.setAttribute("data-theme", 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-        document.body.setAttribute("data-theme", 'light');
-        data = 'light';
-    }
-}
+i.addEventListener("click", function () {
+    modal.style.opacity = 0;
+    modal.style.zIndex = -2;
+})
