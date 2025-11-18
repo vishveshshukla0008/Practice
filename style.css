@@ -8,64 +8,26 @@ html,
 body {
   height: 100%;
   width: 100%;
-}
-
-.main-wrapper {
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: beige;
 }
-.main-wrapper .thumbnail {
-  height: 220px;
-  width: 400px;
-  border-radius: 12px;
-  background-image: url(./scene2.jpg);
-  background-repeat: none;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
+
+h1 {
+  white-space: nowrap;
+  color: white;
 }
-.main-wrapper .thumbnail:active {
-  scale: 0.97;
+
+button {
+  padding: 10px 12px;
+  background-color: crimson;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 7px;
 }
-.main-wrapper .modal-outer {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-backdrop-filter: blur(1);
-          backdrop-filter: blur(1);
-  transition: all ease 0.85s;
-}
-.main-wrapper .modal-outer .modal {
-  position: relative;
-  height: 70%;
-  width: 69%;
-  background-color: white;
-  border-radius: 12px;
-  background-image: url("./scene2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.main-wrapper .modal-outer .modal i {
-  position: absolute;
-  right: 19px;
-  top: 16px;
-  background-color: white;
-  padding: 5px 6px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.main-wrapper .modal-outer .modal i:active {
-  scale: 0.85;
+button:active {
+  scale: 0.96;
 }/*# sourceMappingURL=style.css.map */
