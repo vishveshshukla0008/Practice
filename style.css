@@ -8,26 +8,77 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.main-wrapper div.card {
+  width: 600px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1.3rem;
 }
-
-h1 {
-  white-space: nowrap;
-  color: white;
+.main-wrapper div.card .progress-bar-outer {
+  width: 100%;
 }
-
-button {
-  padding: 10px 12px;
-  background-color: crimson;
-  border: none;
-  color: white;
-  font-size: 1rem;
+.main-wrapper div.card .progress-bar-outer .dummy-bar {
+  position: relative;
+  width: 100%;
+  background-color: rgb(230, 227, 227);
+  height: 10px;
+  border-radius: 1rem;
+}
+.main-wrapper div.card .progress-bar-outer .dummy-bar .progress-bar {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 10px;
+  background-color: greenyellow;
+  border-radius: 1rem;
+}
+.main-wrapper div.card span#counter {
+  font-size: 2.6rem;
   font-weight: 600;
-  border-radius: 7px;
 }
-button:active {
-  scale: 0.96;
+.main-wrapper div.card span#text {
+  font-size: 1.75rem;
+}
+.main-wrapper div.card button {
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2eb12e;
+}
+.main-wrapper div.card button:active {
+  scale: 0.95;
+}
+.main-wrapper div.card button:disabled {
+  opacity: 0.55;
+}
+.main-wrapper div.card p:last-of-type {
+  font-size: 1.2rem;
+  display: none;
+  color: green;
+}
+.main-wrapper div.card p:last-of-type span {
+  color: rgb(56, 180, 230);
+  font-size: 1.23rem;
+  font-weight: 550;
 }/*# sourceMappingURL=style.css.map */
