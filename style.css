@@ -98,6 +98,14 @@ body {
 .main-wrapper .start-Card #startBtn:active {
   scale: 0.99;
 }
+@media (max-width: 800px) {
+  .main-wrapper .start-Card {
+    width: 100%;
+  }
+  .main-wrapper .start-Card .level-btns-wrapper .btns-wrapper button {
+    width: 100%;
+  }
+}
 .main-wrapper .question-card {
   display: flex;
   justify-content: center;
