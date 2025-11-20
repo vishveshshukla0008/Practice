@@ -2,24 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="main-wrapper">
-        <div class="card">
-            <div class="progress-bar-outer">
-                <div class="dummy-bar">
-                    <div class="progress-bar"></div>
+        <div class="start-Card">
+            <p>Start Your Quiz Test</p>
+            <div class="level-btns-wrapper">
+                <h2>Select questions level</h2>
+                <div class="btns-wrapper">
+                    <button id="easy">Easy</button>
+                    <button id="medium">Medium</button>
+                    <button id="hard">Hard</button>
                 </div>
-
             </div>
-            <div><span id="counter">0% </span><span id="text"> Downloaded</span></div>
-            <p id="success-text"><span>song.mp3</span> is ready .</p>
-            <button>Click to Download</button>
+            <button id="startBtn">
+                Start
+            </button>
+        </div>
+        <div class="question-card">
+            <div class="top-bar">
+                <div>
+                    <span id="currentQuestion">01</span>
+                    <span id="allQuestion">/04</span>
+                </div>
+                <p class="level-text"></p>
+            </div>
+            <p id="question">Which function is used to serialize an object into a JSON string in Javascript?</p>
+            <div class="optionsWrapper">
+            </div>
+            <div>
+                <button disabled id="nextBtn">Next</button>
+            </div>
+        </div>
+        <div class="result-card">
+            <h1 class="status">congradulations</h1>
+            <p class="score">43</p>
+            <button id="testAgain">Test Again</button>
         </div>
     </div>
     <script src="script.js"></script>
