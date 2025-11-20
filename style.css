@@ -100,7 +100,7 @@ body {
 }
 @media (max-width: 800px) {
   .main-wrapper .start-Card {
-    width: 100%;
+    width: 90%;
   }
   .main-wrapper .start-Card .level-btns-wrapper .btns-wrapper button {
     width: 100%;
@@ -191,6 +191,12 @@ body {
 }
 .main-wrapper .question-card > div:last-child button:active {
   scale: 0.99;
+}
+@media (max-width: 768px) {
+  .main-wrapper .question-card {
+    width: 90%;
+    padding: 34px;
+  }
 }
 .main-wrapper .result-card {
   display: none;
