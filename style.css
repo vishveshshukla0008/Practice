@@ -4,38 +4,99 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-}
-
-body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f0f0f0;
 }
 
-.card {
-  position: relative;
-  width: 300px;
-  border-radius: 1rem;
+.piano-card {
+  display: flex;
+  height: 300px;
+  width: 90vw;
+  max-width: 900px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 10px;
+  padding: 0 6px;
+  scrollbar-width: none;
 }
-.card img {
-  width: 100%;
-  border-radius: 1rem;
+.piano-card::-webkit-scrollbar {
+  display: none;
+}
+.piano-card .key {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  background: white;
+  border: 1px solid #c7c7c7;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
-.card i {
+.piano-card .key:hover {
+  background: #f2f1ef;
+}
+.piano-card .key:active {
+  background: burlywood;
+}
+.piano-card .black {
   position: absolute;
-  top: 40%;
-  left: 40%;
-  font-size: 4.2rem;
-  opacity: 0;
-  color: transparent;
-  background-image: url("https://imgs.search.brave.com/5zLGKzHNczcXeuAWGH8lU5P3h04BZXCdDFAtjRMJ7Rg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcz/MjkzMDIyOS9waG90/by9wdXJwbGUteWVs/bG93LW9yYW5nZS1n/cmFkaWVudC1iYWNr/Z3JvdW5kLWNvbG9y/ZnVsLWdyYWRpZW50/LWJhY2tncm91bmQt/YWJzdHJhY3QtYmFj/a2dyb3VuZC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9WTNL/Ulc3alo4UEpZUkxF/MmR3dHhLNmVOdDVu/OVpQWGhpakJ3ZjNQ/c21tOD0");
-  background-position: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-          background-clip: text;
+  top: 0;
+  right: -12px;
+  height: 60%;
+  width: 30px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  z-index: 2;
+}
+.piano-card .black:hover {
+  background: rgb(24, 23, 23);
+}
+.piano-card .black:active {
+  background: red;
+}
+
+@media (max-width: 440px) {
+  .piano-card {
+    height: 200px;
+  }
+  .piano-card .key {
+    font-size: 0.9rem;
+  }
+  .piano-card .black {
+    width: 22px;
+    right: -8px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 360px) {
+  .piano-card {
+    height: 180px;
+  }
+  .piano-card .key {
+    font-size: 0.8rem;
+  }
+  .piano-card .black {
+    width: 18px;
+    right: -6px;
+    font-size: 0.75rem;
+  }
 }/*# sourceMappingURL=style.css.map */
