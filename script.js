@@ -29,6 +29,14 @@ class User {
     }
 }
 
+User.prototype.sansLoYar = function () {
+    console.log(this.haglo())
+}
+User.prototype.Khanakhaoyar = function () {
+    console.log("khana kha raha hu")
+}
+
 // let kitab1 = new kitab("ssavdhfcvshavcvs", 2300, "Vishwesh Shukla", "yellow");
 let user1 = new User("reshu", 21, "astik@yash.yahs")
+user1.Khanakhaoyar()
 
