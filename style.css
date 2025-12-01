@@ -4,26 +4,23 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
-}
-
-:root {
-  --x: ;
-  --y: ;
+  background-color: #000;
 }
 
 body {
-  background-image: url(https://images.unsplash.com/photo-1619441207978-3d326c46e2c9?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
 }
-
-body .main-wrapper {
-  height: 100%;
-  width: 100%;
-  background: radial-gradient(75px at var(--x) var(--y), rgba(255, 255, 255, 0.295), rgba(0, 0, 0, 0.726));
+body p {
+  font-size: 3.35rem;
+  color: rgb(81, 255, 0);
+  padding: 10px;
 }
-
-/*# sourceMappingURL=style.css.map */
+body p:hover {
+  background-color: rgba(0, 255, 0, 0.116);
+}/*# sourceMappingURL=style.css.map */
