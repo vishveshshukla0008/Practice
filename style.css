@@ -15,33 +15,49 @@ body {
   justify-content: center;
   align-items: center;
   gap: 23px;
+  background-color: #000;
 }
-body .box {
-  height: 200px;
-  width: 200px;
-  transition: all 0.3s linear;
+body .balls {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
 }
-body .box:hover {
-  transform: scale(1.1) !important;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background: conic-gradient(red, rgb(209, 255, 2), red);
+body .balls:has(.pink) {
+  background-color: red;
 }
-body .red {
-  background-color: crimson;
+body .balls .ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
-body .yellow {
+body .balls .red {
+  background-color: red;
+}
+body .balls .yellow {
   background-color: yellow;
 }
-body .blue {
+body .balls .blue {
   background-color: blue;
 }
-body:has(.box:hover) {
-  background-color: black;
+body .balls .maroon {
+  background-color: maroon;
 }
-body:has(.box:hover) .box {
-  transform: scale(0.88);
+body .balls .crimson {
+  background-color: crimson;
+}
+body .balls .orange {
+  background-color: orange;
+}
+body .balls .pink {
+  background-color: pink;
+}
+body .balls .gray {
+  background-color: gray;
+}
+body .balls .green {
+  background-color: green;
+}
+body .balls .orange {
+  background-color: orange;
 }/*# sourceMappingURL=style.css.map */
