@@ -8,81 +8,40 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #685757;
 }
 
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-@property --myColor {
-  syntax: "<color>";
-  initial-value: rgb(255, 251, 2);
-  inherits: true;
-}
-@keyframes myColorAnime {
-  0% {
-    --myColor: red;
-  }
-  25% {
-    --myColor: green;
-  }
-  50% {
-    --myColor: yellow;
-  }
-  75% {
-    --myColor: pink;
-  }
-  100% {
-    --myColor: crimson;
-  }
-}
-@keyframes degree {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  gap: 23px;
 }
 body .box {
+  height: 200px;
+  width: 200px;
+  transition: all 0.3s linear;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  align-items: start;
-  gap: 0.67rem;
-  width: 320px;
-  color: white;
-  border-radius: 10px;
-  background-color: black;
-  padding-inline: 10px;
-  padding-bottom: 10px;
-  border: 0 solid transparent;
-  transition: all 0.3s cubic-bezier(0, 1.36, 0.97, 0);
-  background: linear-gradient(black) padding-box, conic-gradient(from var(--angle), black, black, var(--myColor), black, black) border-box;
-  animation: degree 1s linear infinite, myColorAnime 1s linear infinite;
-  animation-play-state: paused;
 }
 body .box:hover {
-  border-width: 6px;
-  animation-play-state: running;
-  box-shadow: 0px 0px 60px var(--myColor);
+  transform: scale(1.1) !important;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: conic-gradient(red, rgb(209, 255, 2), red);
 }
-body .box:hover h2,
-body .box:hover p {
-  text-shadow: 0 0 15px var(--myColor);
-  color: var(--myColor);
+body .red {
+  background-color: crimson;
 }
-body .box img {
-  width: 100%;
-  border-radius: 12px;
+body .yellow {
+  background-color: yellow;
+}
+body .blue {
+  background-color: blue;
+}
+body:has(.box:hover) {
+  background-color: black;
+}
+body:has(.box:hover) .box {
+  transform: scale(0.88);
 }/*# sourceMappingURL=style.css.map */
